@@ -3,7 +3,30 @@ import Logo from "./Components/Logo";
 import TwentyTwentyTwoCNY from "./Components/SVG/2022";
 import Envelope from "./Components/SVG/envelope";
 import {GoldText} from "../styles";
+import GSAP from "gsap";
 const CNY = () => {
+
+    const Page = (id: string, delay = 0) => {
+        const timeline = GSAP.timeline({
+            duration: 0.3,
+            transformOrigin: 'center',
+            repeat: -1,
+            yoyo: true,
+            delay: delay,
+        });
+
+        timeline.fromTo(`#${id}`, {
+            y: 0
+        }, {
+            y: 5
+        });
+    };
+
+    React.useEffect(() => {
+        Page('Page-1');
+        Page('Page-2', 0.6);
+    }, []);
+
     return (
         <div>
             <div className="d-flex align-items-center">
@@ -19,7 +42,7 @@ const CNY = () => {
                 <div style={{ width: "200px" }}>
                     <TwentyTwentyTwoCNY />
                 </div>
-                <div style={{ width: "200px" }} className="mt-2 text-center gold-text">
+                <div style={{ width: "200px" }} className="mt-2 mb-3 text-center gold-text">
                     <p><GoldText>Have a great new year!</GoldText></p>
                 </div>
                 <div>
