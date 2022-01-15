@@ -1,10 +1,23 @@
 import styled from '@emotion/styled';
 
 export const IndexWrapper = styled.div`
-  
+  @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+  font-family: "Lato", sans-serif;
+  height: 100vh;
+  background: linear-gradient(
+          61deg,
+          rgba(79, 16, 24, 1) 0%,
+          rgba(212, 33, 39, 1) 100%
+  );
+  padding: 20px;
+  position: absolute;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 `;
 
-export const GoldText = styled.p`
+export const GoldText = styled.span`
   background: -webkit-linear-gradient(#f5eb8c, #dab145);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

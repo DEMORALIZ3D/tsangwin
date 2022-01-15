@@ -1,6 +1,9 @@
 import * as React from 'react';
-import { Global, css } from '@emotion/react'
 import Head from "next/head";
+import CNY from "../CNY";
+import {IndexWrapper} from "../styles";
+import {Footer} from "../styles/Footer";
+import BorderCorner from "../CNY/Components/SVG/borderCorner";
 
 const Index = () => {
 
@@ -14,27 +17,18 @@ const Index = () => {
                     crossOrigin="anonymous"
                 />
             </Head>
-            <Global
-                styles={css`
-                    body {
-                        @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
-                        font-family: "Lato", sans-serif;
-                        height: 100vh;
-                        background: linear-gradient(
-                        61deg,
-                        rgba(79, 16, 24, 1) 0%,
-                        rgba(212, 33, 39, 1) 100%
-                        );
-                        padding: 20px;
-                        position: absolute;
-                        width: 100vw;
-                        display: flex;
-                        flex-direction: column;
-                        overflow: hidden;
-                    }
-               `}
-            />
-            test
+            <IndexWrapper>
+                <CNY />
+                <Footer className="d-flex justify-content-between">
+                    <div>
+                        <BorderCorner />
+                    </div>
+                    <div>
+                        <BorderCorner />
+                    </div>
+                </Footer>
+            </IndexWrapper>
+
         </div>
     )
 };
