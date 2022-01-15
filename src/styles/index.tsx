@@ -1,7 +1,6 @@
 import styled from '@emotion/styled';
 
 export const IndexWrapper = styled.div`
-  @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
   font-family: "Lato", sans-serif;
   height: 100vh;
   background: linear-gradient(

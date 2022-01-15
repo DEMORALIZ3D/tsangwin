@@ -16,6 +16,11 @@ const Index = () => {
                     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
                     crossOrigin="anonymous"
                 />
+                <link rel="preconnect" href="https://fonts.googleapis.com" />
+                <link rel="preconnect" href="https://fonts.gstatic.com" />
+                <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet" />
+                <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" />
+                <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
             </Head>
             <IndexWrapper>
                 <CNY />
