@@ -47,6 +47,7 @@ export const LogoWrapper = styled.div`
     font-weight: bold;
     font-size: 21px;
     padding-left: 7px;
+    padding-top: 2px;
   }
 
   & div > div:not(:first-of-type) {
